@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Título */
+h2 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Inputs, selects e botões */
+select, input, button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Foco em inputs e selects */
+select:focus, input:focus {
+    border-color: #801245;
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 18, 69, 0.5);
+}
+
+/* Botão */
+button {
+    background-color: #801245;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #a81b5d;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #70103b;
+    transform: scale(0.98);
+}
+
+/* Resultado */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+}
