@@ -43,6 +43,31 @@ select, input, button {
     transition: 0.3s;
 }
 
+/* Agrupamento dos selects e botão de inverter */
+.currency-selects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.currency-selects select {
+    width: 45%;
+}
+
+.currency-selects button {
+    width: 10%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ddd;
+    color: #333;
+}
+
+.currency-selects button:hover {
+    background-color: #ccc;
+}
+
 /* Foco em inputs e selects */
 select:focus, input:focus {
     border-color: #801245;
@@ -50,7 +75,7 @@ select:focus, input:focus {
     box-shadow: 0 0 5px rgba(128, 18, 69, 0.5);
 }
 
-/* Botão */
+/* Botão principal */
 button {
     background-color: #801245;
     color: white;
@@ -75,6 +100,41 @@ button:active {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+    color: #222;
+}
+
+/* Loading */
+#loading {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Histórico */
+.history-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.history-section h4 {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+#history {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+#history li {
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 /* Responsividade */
@@ -82,5 +142,14 @@ button:active {
     .container {
         max-width: 90%;
         margin: 30px auto;
+    }
+
+    .currency-selects {
+        flex-direction: column;
+    }
+
+    .currency-selects select,
+    .currency-selects button {
+        width: 100%;
     }
 }
