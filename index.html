@@ -20,11 +20,26 @@
         <h2>Conversor de Moedas</h2>
 
         <input type="number" id="amount" placeholder="Digite o valor">
-        <select id="fromCurrency"></select>
-        <select id="toCurrency"></select>
-        <button onclick="convertCurrency()">Converter</button>
         
+        <div class="currency-selects">
+            <select id="fromCurrency"></select>
+            <button onclick="invertCurrencies()">🔄</button>
+            <select id="toCurrency"></select>
+        </div>
+
+        <button onclick="convertCurrency()">Converter</button>
+
+        <p id="loading" style="display: none;">⏳ Carregando...</p>
+
         <h3 id="result"></h3>
+
+        <hr>
+
+        <section class="history-section">
+            <h4>Histórico de Conversões</h4>
+            <ul id="history"></ul>
+            <button onclick="clearHistory()">🧹 Limpar histórico</button>
+        </section>
 
     </div>
 
