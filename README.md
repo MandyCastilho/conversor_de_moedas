@@ -1,8 +1,6 @@
 # 💱 Conversor de Moedas — JavaScript e API em Tempo Real
 
-<p align="center">
-  Este projeto é um **Conversor de Moedas online** moderno e funcional, que utiliza uma **API de câmbio** para obter taxas atualizadas entre diversas moedas.
-</p>
+Este projeto é um *Conversor de Moedas online* moderno e funcional, que utiliza uma <strong>API de câmbio</strong> para obter taxas atualizadas entre diversas moedas.
 
 A aplicação permite converter valores rapidamente, inverter moedas, visualizar carregamento durante a requisição e manter um histórico de conversões salvo no navegador, garantindo praticidade e precisão.
 
@@ -54,8 +52,6 @@ A aplicação permite converter valores rapidamente, inverter moedas, visualizar
 ---
 
 ## 💡 Possíveis Melhorias Futuras
-
-Abaixo estão algumas ideias para evoluir e expandir o projeto:
 
 * **Conversão Automática:** Converter automaticamente ao alterar os valores ou as moedas selecionadas (sem precisar clicar no botão "Converter").
 * **Gráfico de Variação Cambial:** Implementar um gráfico em tempo real para visualizar a variação histórica da taxa.
